@@ -1,13 +1,22 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {CounterComponent} from "./counter-container/counter/counter.component";
+import {TodoListComponent} from "./todo-list/todo-list.component";
+import {
+  CounterParentComponentComponent
+} from "./counter-container/counter-parent-component/counter-parent-component.component";
+
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  styleUrls: ['./app.component.css'],
+  imports: [
+    CounterComponent,
+    TodoListComponent,
+    CounterParentComponentComponent
+  ]
 })
 export class AppComponent {
-  title = 'angualrhw3';
+
 }
