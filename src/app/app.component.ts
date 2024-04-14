@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {CounterComponent} from "./counter-container/counter/counter.component";
 import {TodoListComponent} from "./todo-list/todo-list.component";
 import {
   CounterParentComponentComponent
 } from "./counter-container/counter-parent-component/counter-parent-component.component";
+import {UserListComponent} from "./user-list/user-list.component";
 
 
 @Component({
@@ -14,9 +15,10 @@ import {
   imports: [
     CounterComponent,
     TodoListComponent,
-    CounterParentComponentComponent
+    CounterParentComponentComponent,
+    UserListComponent,
   ]
 })
 export class AppComponent {
-
+  userListArr: string[] = ['Saba', 'Nick', 'Anna', 'Gio', 'Mariam']
 }
