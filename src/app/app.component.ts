@@ -5,6 +5,8 @@ import {
   CounterParentComponentComponent
 } from "./counter-container/counter-parent-component/counter-parent-component.component";
 import {UserListComponent} from "./user-list/user-list.component";
+import {PostListComponent} from "./post-list/post-list.component";
+import {AddPostComponent} from "./add-post/add-post.component";
 
 
 @Component({
@@ -17,8 +19,10 @@ import {UserListComponent} from "./user-list/user-list.component";
     TodoListComponent,
     CounterParentComponentComponent,
     UserListComponent,
+    PostListComponent,
+    AddPostComponent,
   ]
 })
 export class AppComponent {
-  userListArr: string[] = ['Saba', 'Nick', 'Anna', 'Gio', 'Mariam']
+
 }
