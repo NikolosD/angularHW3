@@ -7,6 +7,7 @@ import {
 import {UserListComponent} from "./user-list/user-list.component";
 import {PostListComponent} from "./post-list/post-list.component";
 import {AddPostComponent} from "./add-post/add-post.component";
+import {RegistrationComponent} from "./registration/registration.component";
 
 
 @Component({
@@ -21,6 +22,7 @@ import {AddPostComponent} from "./add-post/add-post.component";
     UserListComponent,
     PostListComponent,
     AddPostComponent,
+    RegistrationComponent,
   ]
 })
 export class AppComponent {
